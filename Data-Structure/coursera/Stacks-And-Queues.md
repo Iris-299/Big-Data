@@ -5,8 +5,9 @@
 > * Key Pop(): removes and returns most recently-added key
 > * Boolean Empty(): are there any elements?
 
-## E.g. IsBalanced(str)
+## E.g. 
 ```C++
+IsBalanced(str)
 Stack stack
 for char in str:
   if char in ['(','[']:

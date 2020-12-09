@@ -23,11 +23,11 @@ return stack.Empty()
 ```
 
 ## Stack Implementation   
-### with Array  
+* **with Array**  
   · alocate an array of some maximum stack size  
   · all O(1) operations  
  
-### with Linked List  
+* **with Linked List**  
   · Push means PushFront   
   · get top element means get head element   
   · top means TopFront   
@@ -44,10 +44,10 @@ return stack.Empty()
   · Boolean Empty(): are there any elements?  
  
 ## Queue Implementation   
-### with Linked List    
+* **with Linked List**    
   Enqueue: use List.PushBack   
   Dequeue: use List.TopFront and List.PopFront   
   
-### with Array    
+* **with Array**    
   maximum size
  

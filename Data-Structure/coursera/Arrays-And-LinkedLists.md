@@ -22,9 +22,9 @@
 # Lists
 > Head is a pointer that point to a node.
 ## Singly-Linked Lists
-* Node contains:
-  * key
-  * next pointer<br/>
+* Node contains:    
+  · key   
+  · next pointer<br/>
 
 |List API|Singly-Linked List|no tail|with tail|
 |:-|:-|:-:|:-:|
@@ -41,10 +41,10 @@
 |AddAfter(Node,Key)|adds key after node|O(1)||
 
 ## Doubly-Linked Lists
-* Node contains:
-  * key
-  * next pointer
-  * prev pointer<br/>
+* Node contains:  
+  · key   
+  · next pointer  
+  · prev pointer<br/>
   
   PopBack() ~~O(n)~~ O(1)<br/>
   AddBefore(Node,Key) ~~O(n)~~ O(1)<br/>

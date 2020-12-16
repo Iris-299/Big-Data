@@ -142,6 +142,7 @@ repaeat (n-1) times:
   swap A[1] and A[size]
   size <- size - 1
   ShiftDown(1)
+```
 
  
 

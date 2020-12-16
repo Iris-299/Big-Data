@@ -142,7 +142,33 @@ ExtractMax()
     ShiftDown(1)
   ```
 
- 
+## 0-based Arrays
+```Pseudocode
+Parent(i)
+return  ⎣(i-1)/2⎦
+```
+
+```
+LeftChild(i)
+return 2i+1
+```
+
+```
+RightChild(i)
+return 2i+2
+```
+
+## Binary Min-Heap
+**Definition**  
+Binary min-heap is a binary tree (each node has zero, one, or two children) where the value of each node is at most the values of its children.  
+
+Can be implemented similarly.
+
+## d-ary Heap
+* In a d-ary heap nodes on all levles except for possibly the last one has exactly d children.
+* The height of such a tree is about log<sub>d</sub> _n_
+* The running time of ShiftUp is O(log<sub>d</sub> _n_) 
+* The running time of ShiftDown is O(dlog<sub>d</sub> _n_): on each level, we find the largest value among d children.
 
 
 

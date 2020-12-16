@@ -108,41 +108,39 @@ ExtractMax()
 * Sort Using Priority Queue   
 · The resulting alagorithm is comparison-based and has running time O(nlong n) (hence, asymptotically optimal!)   
 · Natural generalization of selection sort: instead of simply scanning the rest of the array to find the maximum value, use a smart data structure.   
-· Not in-place: use additional space to store the priority queue.  
+· Not in-place: use additional space to store the priority queue.   
 
-```
-HeapSort(A[1...n])
-create an empty priority queque
-for i from 1 to n:
-  Insert(A[i])
-for i from n downto 1:
-  A[i] <- ExtractMax()
-```
+  ```
+  HeapSort(A[1...n])
+  create an empty priority queque
+  for i from 1 to n:
+    Insert(A[i])
+  for i from n downto 1:
+    A[i] <- ExtractMax()
+  ```
 
 * Turn Array into a Heap    
 · We repair the heap property going from bottom to top.   
 · Initially, the heap property is satisfied in all leaves (subtrees of depth 0).    
 · We then start repairing the heap property in all subtrees of depth 1.   
 · When we reach the root, the heap property is satisfied in the whole tree.
-· Running time: O(nlog n)
+· Running time: O(nlog n)  
+  ```
+  BuildHeap(A[1...n])
+  size <- n
+  for i from ⎣n/2⎦ downto 1:
+    ShiftDown(i)
+  ```
 
-```
-BuildHeap(A[1...n])
-size <- n
-for i from ⎣n/2⎦ downto 1:
-  ShiftDown(i)
-```
-
-* In-place Heap Sort
-
-```
-HeapSort(A[1...n])
-BuildHeap(A)
-repaeat (n-1) times:
-  swap A[1] and A[size]
-  size <- size - 1
-  ShiftDown(1)
-```
+* In-place Heap Sort  
+  ```
+  HeapSort(A[1...n])
+  BuildHeap(A)
+  repaeat (n-1) times:
+    swap A[1] and A[size]
+    size <- size - 1
+    ShiftDown(1)
+  ```
 
  
 
